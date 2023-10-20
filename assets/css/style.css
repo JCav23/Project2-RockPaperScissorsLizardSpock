@@ -1,6 +1,12 @@
 body{
-    background-color: red;
+    background-color:  #5cb270;
     font-family: "Quicksand", sans-serif;
+}
+/* #FF6961 */ 
+main {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .heading {
@@ -14,7 +20,8 @@ body{
     color: yellow;
 }
 
-section {
+.section {
+    flex-direction: row;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -31,3 +38,4 @@ section {
         display: none;
     }
 }
+
