@@ -35,6 +35,15 @@ main {
     margin: 0 auto;
 }
 
+.game-area {
+    margin: 0 auto;
+    width: 85%;
+    height: 70vh;
+    border-radius: 5%;
+    background-color: rgb(151, 151, 153);
+    border: 2px solid black;
+}
+
 @media screen and (min-width: 769px){
     .top {
         display: none
