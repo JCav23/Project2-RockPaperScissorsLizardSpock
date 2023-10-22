@@ -11,7 +11,7 @@ main {
 
 .heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 .icon {
@@ -21,15 +21,40 @@ main {
 }
 
 .section {
-    flex-direction: row;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     text-align: center;
+}
+
+.rules{
+    align-items: center;
+    justify-content: center;
+}
+.rules-item, .rules-img {
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 769px){
     .top {
         display: none
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    iframe {
+        height: 500px;
+    }
+
+    .rules {
+        flex-direction: row;
+    }
+
+    .rules-img {
+        width: 400px;
+        height: 400px;
     }
 }
 
