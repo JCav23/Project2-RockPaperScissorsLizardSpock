@@ -38,7 +38,7 @@ main {
     margin: 0 auto;
     width: 85%;
     height: 70vh;
-    min-height: 400px;
+    min-height: 450px;
     border-radius: 3%;
     background-color: rgb(151, 151, 153);
     border: 2px solid black;
@@ -49,21 +49,47 @@ main {
     flex-direction: row;
     justify-content: space-between;
 }
+.play-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 .scores {
     display: inline;
     margin: 0 auto;
 }
-/* 
-.game-btns {
-    align-items: center;
-} */
 
+.game-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .btn {
     max-width: 300px;
     margin: 5px;
     font-size: 18px;
     padding: 5px 20px;
+}
+
+.game-display {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.game-image {
+    margin: 15px auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+    width: 75px;
+    height: 75px;
+}
+
+.results {
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 @media screen and (min-width: 769px){
@@ -83,6 +109,10 @@ main {
         flex-direction: row;
     }
 
+    .rules-item {
+        font-size: 1.5rem;
+    }
+
     .rules-img {
         width: 400px;
         height: 400px;
@@ -90,6 +120,15 @@ main {
 
     .scores{
         font-size: 1.5rem;
+    }
+    .game-display{
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .game-image{
+        width: 150px;
+        height: 150px;
     }
 }
 
