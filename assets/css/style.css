@@ -17,7 +17,6 @@ main {
 .icon {
     height: 40px;
     padding: 5px;
-    color: yellow;
 }
 
 .section {
@@ -39,9 +38,32 @@ main {
     margin: 0 auto;
     width: 85%;
     height: 70vh;
-    border-radius: 5%;
+    min-height: 400px;
+    border-radius: 3%;
     background-color: rgb(151, 151, 153);
     border: 2px solid black;
+}
+
+.score-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.scores {
+    display: inline;
+    margin: 0 auto;
+}
+/* 
+.game-btns {
+    align-items: center;
+} */
+
+.btn {
+    max-width: 300px;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px 20px;
 }
 
 @media screen and (min-width: 769px){
@@ -64,6 +86,10 @@ main {
     .rules-img {
         width: 400px;
         height: 400px;
+    }
+
+    .scores{
+        font-size: 1.5rem;
     }
 }
 
