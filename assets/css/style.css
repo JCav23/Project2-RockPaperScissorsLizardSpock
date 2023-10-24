@@ -1,8 +1,18 @@
-body{
-    background-color:  #5cb270;
-    font-family: "Quicksand", sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* #FF6961 */ 
+
+body{
+    background-color:  #ADF5FF;
+    font-family: "Quicksand", sans-serif;
+    color: #481620;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     flex: 1 0;
     display: flex;
@@ -10,6 +20,7 @@ main {
 }
 
 .heading {
+    margin: 25px auto;
     text-align: center;
     font-size: 1.25rem;
 }
@@ -38,21 +49,24 @@ main {
     margin: 0 auto;
     width: 85%;
     height: 70vh;
-    min-height: 450px;
+    min-height: 875px;
     border-radius: 3%;
-    background-color: rgb(151, 151, 153);
-    border: 2px solid black;
+    background-color: #0075A2;
+    border: 2px solid #481620;
+    color: #00FFC5;
 }
 
 .score-area {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .play-area {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .scores {
@@ -65,31 +79,60 @@ main {
     flex-direction: column;
     justify-content: space-around;
 }
+
 .btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
     max-width: 300px;
-    margin: 5px;
+    margin: 15px auto;
     font-size: 18px;
-    padding: 5px 20px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: #D55672;
+    color: #ADF5FF;
 }
 
 .game-display {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .game-image {
-    margin: 15px auto;
-    border: 1px solid black;
+    margin: 15px 30px;
+    border: 1px solid #00FFC5;
     border-radius: 2px;
     padding: 5px;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
 }
 
 .results {
     margin: 5px;
-    border: 1px solid black;
+    border: 1px solid #00FFC5;
     border-radius: 2px;
+}
+
+/* footer styles */
+footer{
+    background-color: #0075A2;
+    border-top: 2px solid #481620;
+}
+
+.socials{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socials a {
+    color: #00FFC5;
+    font-size: 250%;
+}
+
+.socials a:hover{
+    color: #481620;
+    background-color: #00FFC5;
 }
 
 @media screen and (min-width: 769px){
@@ -121,14 +164,22 @@ main {
     .scores{
         font-size: 1.5rem;
     }
+
     .game-display{
         flex-direction: column;
-        align-items: baseline;
+    }
+
+    .play-area{
+        flex-direction: row;
     }
 
     .game-image{
         width: 150px;
         height: 150px;
+    }
+
+    .game-area{
+        min-height: 600px;
     }
 }
 
@@ -138,3 +189,10 @@ main {
     }
 }
 
+@media screen and (min-width: 1200px){
+    .game-image{
+        margin: 0 100px;
+        width: 225px;
+        height: 225px;
+    }
+}
