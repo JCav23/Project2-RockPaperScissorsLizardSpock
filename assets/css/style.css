@@ -92,6 +92,11 @@ main {
     color: #ADF5FF;
 }
 
+.btn:hover {
+    background-color: #481620;
+    color: #00FFC5
+}
+
 .game-display {
     flex-direction: row;
     justify-content: space-between;
@@ -132,7 +137,6 @@ footer{
 
 .socials a:hover{
     color: #481620;
-    background-color: #00FFC5;
 }
 
 @media screen and (min-width: 769px){
