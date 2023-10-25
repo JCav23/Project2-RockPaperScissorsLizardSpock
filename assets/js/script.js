@@ -43,14 +43,53 @@ function compChoice() {
 }
 
 function evaluateWinner() {
-    let results = ["You Win!", "Bazinga! You Lose.", "It's a Tie..."];
+    let results = [". You Win!", ". Bazinga! You Lose.", "It's a Tie..."];
     let playerImage = document.getElementById('player-img');
     let compImage = document.getElementById('computer-img');
     let playerResult = playerImage.getAttribute('alt');
     let compResult = compImage.getAttribute('alt');
     let output = document.getElementById('results');
+    let playerScore = document.getElementById('win').value;
+    let compScore = document.getElementById('loss').value;
     if (playerResult === compResult) {
         output.innerHTML = `You both chose ${playerResult}, ${results[2]}`;
-        console.log(playerResult, results[2]);
-    }
+    } else if (playerResult !== compResult) {
+        
+        if (playerResult === 'rock') {
+            compResult === 'lizard' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'scissors' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'paper' ? (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1])
+            : (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1]);
+
+        } 
+        
+        else if (playerResult === 'paper') {
+            compResult === 'rock' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'spock' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'scissors' ? (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1])
+            : (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1]);
+        } 
+        
+        else if (playerResult === 'scissors') {
+            compResult === 'paper' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'lizard' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'spock' ? (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1])
+            : (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1]);
+        } 
+        
+        else if (playerResult === 'lizard') {
+            compResult === 'paper' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'spock' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'scissors' ? (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1])
+            : (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1]);
+        } 
+        
+        else if (playerResult === 'spock') {
+            compResult === 'rock' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'scissors' ? (output.innerHTML = document.getElementById(`${playerResult}-${compResult}`).innerHTML + results[0])
+            : compResult === 'lizard' ? (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1])
+            : (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1]);
+        }
+
+    } 
 };
