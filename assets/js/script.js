@@ -56,6 +56,7 @@ function evaluateWinner() {
     let output = document.getElementById('results');
     if (playerResult === compResult) {
         output.innerHTML = `You both chose ${playerResult}, ${results[2]}`;
+        result = 'tie'
     } else if (playerResult !== compResult) {
         
         if (playerResult === 'rock') {
@@ -105,7 +106,9 @@ let l = 0;
 function updateScores(result) {
     let playerScore = document.getElementById('win');
     let compScore = document.getElementById('loss');
-    result === 'win' ? w++ : l++;
+    result === 'win' ? w++ 
+    : result === 'loss' ? l++ 
+    : ( w = w, l = l) ;
     playerScore.innerHTML = w;
     compScore.innerHTML = l;
 };
