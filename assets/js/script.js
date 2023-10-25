@@ -3,9 +3,12 @@ document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            let gameChoice = this.getAttribute("data-type");
-            startGame(gameChoice);
+            let input = this.getAttribute("data-type");
+            startGame(input);
             compChoice();
+            if (input === 'reset') {
+                reset();
+            }
         });
     }
 });
@@ -13,19 +16,19 @@ document.addEventListener("DOMContentLoaded", function(){
 // function initiates a game after reciving player choice input
 function startGame(gameChoice) {
     let playerImage = document.getElementById("player-img");
-    if (gameChoice == "rock") {
+    if (gameChoice === "rock") {
         playerImage.setAttribute("src", "assets/images/rock.png")
         playerImage.setAttribute("alt", "rock")
-    } else if (gameChoice == "paper"){
+    } else if (gameChoice === "paper"){
         playerImage.setAttribute("src", "assets/images/paper.png")
         playerImage.setAttribute("alt", "paper")
-    } else if (gameChoice == "scissors"){
+    } else if (gameChoice === "scissors"){
         playerImage.setAttribute("src", "assets/images/scissors.png")
         playerImage.setAttribute("alt", "scissors")
-    } else if (gameChoice == "lizard"){
+    } else if (gameChoice === "lizard"){
         playerImage.setAttribute("src", "assets/images/lizard.png")
         playerImage.setAttribute("alt", "lizard")
-    } else if (gameChoice == "spock"){
+    } else if (gameChoice === "spock"){
         playerImage.setAttribute("src", "assets/images/spock.png")
         playerImage.setAttribute("alt", "spock")
     }
@@ -105,4 +108,18 @@ function updateScores(result) {
     result === 'win' ? w++ : l++;
     playerScore.innerHTML = w;
     compScore.innerHTML = l;
+};
+
+// function allows user to set the page to default by clicking reset button 
+function reset(){
+    let output = document.getElementById('results');
+    let playerScore = document.getElementById('win');
+    let compScore = document.getElementById('loss');
+    let compImage = document.getElementById('computer-img');
+    let playerImage = document.getElementById('player-img');
+    output.innerHTML = "Make your choice";
+    playerImage.setAttribute("src", "assets/images/atom.png");
+    compImage.setAttribute("src", "assets/images/atom.png");
+    playerScore.innerHTML = 0;
+    compScore.innerHTML = 0;
 };

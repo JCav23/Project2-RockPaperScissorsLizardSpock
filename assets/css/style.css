@@ -49,7 +49,7 @@ main {
     margin: 0 auto;
     width: 85%;
     height: 70vh;
-    min-height: 875px;
+    min-height: 900px;
     border-radius: 3%;
     background-color: #0075A2;
     border: 2px solid #481620;
@@ -111,10 +111,11 @@ main {
     height: 100px;
 }
 
-.results {
+.output {
     margin: 5px;
     border: 1px solid #00FFC5;
     border-radius: 2px;
+    font-size: 1.2rem;
 }
 
 /* footer styles */
