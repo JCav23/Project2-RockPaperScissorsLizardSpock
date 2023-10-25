@@ -122,4 +122,6 @@ function reset(){
     compImage.setAttribute("src", "assets/images/atom.png");
     playerScore.innerHTML = 0;
     compScore.innerHTML = 0;
+    w = 0
+    l = 0
 };
