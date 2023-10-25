@@ -17,20 +17,20 @@ document.addEventListener("DOMContentLoaded", function(){
 function startGame(gameChoice) {
     let playerImage = document.getElementById("player-img");
     if (gameChoice === "rock") {
-        playerImage.setAttribute("src", "assets/images/rock.png")
-        playerImage.setAttribute("alt", "rock")
+        playerImage.setAttribute("src", "assets/images/rock.png");
+        playerImage.setAttribute("alt", "rock");
     } else if (gameChoice === "paper"){
-        playerImage.setAttribute("src", "assets/images/paper.png")
-        playerImage.setAttribute("alt", "paper")
+        playerImage.setAttribute("src", "assets/images/paper.png");
+        playerImage.setAttribute("alt", "paper");
     } else if (gameChoice === "scissors"){
-        playerImage.setAttribute("src", "assets/images/scissors.png")
-        playerImage.setAttribute("alt", "scissors")
+        playerImage.setAttribute("src", "assets/images/scissors.png");
+        playerImage.setAttribute("alt", "scissors");
     } else if (gameChoice === "lizard"){
-        playerImage.setAttribute("src", "assets/images/lizard.png")
-        playerImage.setAttribute("alt", "lizard")
+        playerImage.setAttribute("src", "assets/images/lizard.png");
+        playerImage.setAttribute("alt", "lizard");
     } else if (gameChoice === "spock"){
-        playerImage.setAttribute("src", "assets/images/spock.png")
-        playerImage.setAttribute("alt", "spock")
+        playerImage.setAttribute("src", "assets/images/spock.png");
+        playerImage.setAttribute("alt", "spock");
     }
 }
 
@@ -40,8 +40,8 @@ function compChoice() {
     let randomChoice = Math.floor(Math.random()*choices.length);
     let finalChoice = choices[randomChoice];
     let compImage = document.getElementById('computer-img');
-    compImage.setAttribute("src", `assets/images/${finalChoice}.png`)
-    compImage.setAttribute("alt", `${finalChoice}`)
+    compImage.setAttribute("src", `assets/images/${finalChoice}.png`);
+    compImage.setAttribute("alt", `${finalChoice}`);
     evaluateWinner();
 }
 
@@ -56,7 +56,7 @@ function evaluateWinner() {
     let output = document.getElementById('results');
     if (playerResult === compResult) {
         output.innerHTML = `You both chose ${playerResult}, ${results[2]}`;
-        result = 'tie'
+        result = 'tie';
     } else if (playerResult !== compResult) {
         
         if (playerResult === 'rock') {
@@ -95,9 +95,9 @@ function evaluateWinner() {
             : (output.innerHTML = document.getElementById(`${compResult}-${playerResult}`).innerHTML + results[1], result = "loss");
         }
 
-    };
+    }
     updateScores(result);
-};
+}
 
 // function updates the scores in the html after each game 
 let w = 0;
@@ -111,7 +111,7 @@ function updateScores(result) {
     : ( w = w, l = l) ;
     playerScore.innerHTML = w;
     compScore.innerHTML = l;
-};
+}
 
 // function allows user to set the page to default by clicking reset button 
 function reset(){
@@ -125,6 +125,6 @@ function reset(){
     compImage.setAttribute("src", "assets/images/atom.png");
     playerScore.innerHTML = 0;
     compScore.innerHTML = 0;
-    w = 0
-    l = 0
-};
+    w = 0;
+    l = 0;
+}
