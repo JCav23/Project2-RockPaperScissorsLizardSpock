@@ -1,5 +1,7 @@
 # Rock Paper Scissors Lizard Spock
 
+Welcome to Rock, Paper, Scissors, Lizard, Spock. An interactive web game based off of the twist on the classic "Rock, Paper Scissors" game made popular by the television show The Big Bang Theory. Playing against Dr. Sheldon Cooper (simulated by the computer), the player makes an input using one of the button inputs
+
 ![Responsice Mockup](./assets/readme-images/responsive-mockup.png)
 
 ## UX
@@ -48,19 +50,21 @@ The colour palette was generated using coolers.co to create a visually appealing
 ### Features Left to Implement
 
 
+
 ## Testing 
 
+- All external social media links in the footer were tested on the live pages after deployment using GitHub Pages with no issues
+- The functionality of the game was tested after deployment, with the discovered bugs fixed and recorded in the [bugs section below](#bugs)
 
-
-![Page Lighthouse Report]()
+![Page Lighthouse Report](./assets/readme-images/lighthouse-report.png)
 
 ### Validator Testing 
 
-The HTML and CSS code were passed through the official W3C and Jigsaw Validators respectively and the results are outlined below
+The HTML and CSS code were passed through the official W3C, Jigsaw and JSHint Validators respectively and the results are outlined below
 
 - HTML
   
-  - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - HTML content returned no error while passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
   <br>
   ![Valid HTML](./assets/readme-images/html-valid.png)
 
@@ -70,7 +74,11 @@ The HTML and CSS code were passed through the official W3C and Jigsaw Validators
   <br>
   ![Valid CSS]()
 
-### Unfixed Bugs
+### Bugs
+
+Most bugs were fixed during development using chrome developer tools to monitor the progress of the site during the development process. Some only were apparent during testing and were subsequently fixed. 
+- An error in the javascript meant that even after pressing the reset button the previous scores were remembered and used in any subsequent games. This was fixed by refactoring the reset function so that it updated the global variables ("w" & "l") so that they too were reset to zero when the reset button was pressed.
+- An error in the javascript meant that on a tie the computer's score still recieved a point. This was fixed by refactoring the ternary operator to take a tie into account and not update either of the scores.
 
 ## Deployment
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -78,13 +86,21 @@ The HTML and CSS code were passed through the official W3C and Jigsaw Validators
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - 
+The live link can be found here - https://jcav23.github.io/Project2-RockPaperScissorsLizardSpock/
 
 
 ## Credits 
 
+The code used for the footer was taken from my previous project and altered to fit to this webpage, changing colors and sizings to be more appropriate. W3 Schools, and Mozilla doumentation was referenced during development to check various syntax, operations and methods along with various web articles to examine different syntax during development. 
 
 ### Content 
 
+- The icons from across the webpage were taken from [Font Awesome](https://fontawesome.com/)
+- The font was taken from [Google Fonts](https://fonts.google.com/)
 
 ### Media
+
+- The iframe video was taken from Youtube and belongs to the TBS account. The clip was taken from The Big Bang Theory and shows Dr. Sheldon Cooper explaining the rules. [Watch here](https://www.youtube.com/watch?v=pIpmITBocfM&t=2s&ab_channel=TBS)
+- the atom image was found through a google image search and used both on the page and also used to generate the .ico file for the site's favicon. This was accomplished using an online favicon generator. 
+- Most of the game images were taken from the open source [stick-png](https://www.stickpng.com/)
+- The image of Mr Spock was taken from a google image search of spock, specifically the picture found [here.](https://lawliberty.org/the-legacy-of-mr-spock-reason-and-reverence/)

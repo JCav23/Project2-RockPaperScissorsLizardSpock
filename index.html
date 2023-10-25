@@ -15,17 +15,18 @@
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
 <body>
-    <h1 class="heading">
-        <div>
+    <div class="heading title">
+        <h1 class="heading">
             <img class="icon top" src="assets/images/atom.png" alt="atom icon">
-        </div>
-        <img class="icon left" src="assets/images/atom.png" alt="atom icon">
-        Rock, Paper, Scissors, Lizard, Spock
-        <img class="icon right" src="assets/images/atom.png" alt="atom icon">
-    </h1>
+            <img class="icon left" src="assets/images/atom.png" alt="atom icon">
+            Rock, Paper, Scissors, Lizard, Spock
+            <img class="icon right" src="assets/images/atom.png" alt="atom icon">
+        </h1>
+    </div>
+
     <main>
         <div  class="game-area section">
-            <button data-type="reset"="reset" class="btn">Reset</button>
+            <button data-type="reset" class="btn">Reset</button>
             <div class="score-area">
                 <p class="scores">Player: <span id="win">0</span></p>
                 <p class="scores">Sheldon: <span id="loss">0</span></p>
@@ -36,7 +37,7 @@
                     <button data-type="paper" class="btn"><i class="fa-regular fa-hand"></i> Paper</button>
                     <button data-type="scissors" class="btn"><i class="fa-regular fa-hand-scissors"></i> Scissors</button>
                     <button data-type="lizard" class="btn"><i class="fa-regular fa-hand-lizard"></i> Lizard</button>
-                    <button data-type="spock"class="btn"><i class="fa-regular fa-hand-spock"></i> Spock</button>
+                    <button data-type="spock" class="btn"><i class="fa-regular fa-hand-spock"></i> Spock</button>
                 </div>
                 <div class="game-display">
                     <img id="player-img" class="game-image" src="assets/images/atom.png" alt="atom icon">
