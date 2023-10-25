@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/* 
+light blue: #ADF5FF
+brown: #481620
+darkblue: #0075A2
+neon green: #00FFC5
+blush: D55672 */
+
 body{
     background-color:  #ADF5FF;
     font-family: "Quicksand", sans-serif;

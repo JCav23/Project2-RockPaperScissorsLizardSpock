@@ -18,7 +18,7 @@
 
 ### Colours:
 The colour palette was generated using coolers.co to create a visually appealing colour scheme for the website. the different shades of blue provide a nice shading for the main body of the page, while the dark brown and green colours provide a nice constrast for the font against each of the blues. The blush red for the game buttons was chosen to make them stand out to the user, while the dark brown provided the nice hover effect adding that interactive feel.
-![Colour Palette](./assets/readme-images/colour-scheme.png)
+![Colour Palette](./assets/readme-images/color-scheme.png)
 
 ### Fonts:
 

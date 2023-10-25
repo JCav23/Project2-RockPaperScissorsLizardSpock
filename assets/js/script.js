@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
     for (let button of buttons) {
         button.addEventListener("click", function() {
             let gameChoice = this.getAttribute("data-type");
-            startGame(gameChoice)
+            startGame(gameChoice);
+            compChoice();
         });
     }
 });
@@ -22,6 +23,14 @@ function startGame(gameChoice) {
     } else if (gameChoice == "lizard"){
         playerImage.setAttribute("src", "assets/images/lizard.png")
     } else if (gameChoice == "spock"){
-        playerImage.setAttribute("src", "assets/images/spock.jpg")
+        playerImage.setAttribute("src", "assets/images/spock.png")
     }
+}
+
+function compChoice() {
+    let choices = ["rock", "paper", "scissors", "lizard", "spock"];
+    let randomChoice = Math.floor(Math.random()*choices.length);
+    let finalChoice = choices[randomChoice];
+    let compImage = document.getElementById('computer-img');
+    compImage.setAttribute("src", `assets/images/${finalChoice}.png`)
 }
