@@ -90,6 +90,7 @@ main {
     border-radius: 50px;
     background-color: #D55672;
     color: #ADF5FF;
+    cursor: pointer;
 }
 
 .btn:hover {
