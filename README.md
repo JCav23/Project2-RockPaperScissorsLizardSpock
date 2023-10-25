@@ -64,7 +64,11 @@ The HTML and CSS code were passed through the official W3C, Jigsaw and JSHint Va
 
 - HTML
   
-  - HTML content returned no error while passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - HTML Validation
+    - Some minor errors were found during html validation including div structure within heading and gramatical/spelling errors in one element attribute, these were adjusted accordingly
+    - Returned error due to frameborder property being deprecated, the error was then removed accordingly and the css updated.
+    - Returned error due to using a percentage value for width within the iframe's as this was the same technique demonstrated previously in course material I believed it to be acceptable. 
+    - Validated using [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
   <br>
   ![Valid HTML](./assets/readme-images/html-valid.png)
 

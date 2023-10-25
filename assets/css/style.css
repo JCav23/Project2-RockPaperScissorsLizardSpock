@@ -42,7 +42,9 @@ main {
     padding: 20px;
     text-align: center;
 }
-
+iframe {
+    border: none;
+}
 .rules{
     align-items: center;
     justify-content: center;
