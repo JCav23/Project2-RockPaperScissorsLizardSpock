@@ -9,9 +9,7 @@ The player will make a choice to start the game and the backend logic will rando
 ## UX
 
 ### Site Purpose:
-The site is designed to provide a simple visually appealing game, for entertainment purposes. 
-
-### Site Goal:
+The site is designed to provide a simple visually appealing game, for entertainment purposes. The site design was chosen to relate to the source material it was inspired by to evoke a positive emotional response from the user. 
 
 ### Audience:
 The game was made popular by the hit television show the Big Bang Theory, so incorporates different features to relate back to the television show. The iframe giving the explanation is a direct clip from the television show, also the atom images were chose to again relate back to the television show being similar to the show logo.
@@ -26,7 +24,7 @@ The colour palette was generated using coolers.co to create a visually appealing
 ![Colour Palette](./assets/readme-images/color-scheme.png)
 
 ### Fonts:
-The Monserrat font was chosen as a modern and attractive font.
+The Monserrat font was chosen as a modern and attractive font. 
 
 ### Images:
 The pictures and iframe were both chosen to relate back to the television show evoking an position emotional response from those who have watched the show. 
@@ -35,11 +33,17 @@ The pictures and iframe were both chosen to relate back to the television show e
 
 ### Existing Features
 
-### Game Area
+- Game Area
 
-- The Game area is displayed with a nice clear layout with interactive buttons presenting interactivity to the user. The Buttons have a hover effect and a pointer cursor to relay again that interactivity to the user. 
+  - The Game area is displayed with a nice clear layout with interactive buttons presenting interactivity to the user. The Buttons have a hover effect and a pointer cursor to relay again that interactivity to the user. 
 
 ![Game Area](./assets/readme-images/game-area.png)
+
+- Rules Area
+
+  - The rules are provides a description of the rules of the game in multiple ways to help the user understand how to play. The iframe provides a video explanation, the text explains each of the winning combinations, and the diagram shows a visual representation of the winning flow of the combinations.
+
+![Rules Area](./assets/readme-images/rules-area.png)
 
 - __Footer__ 
 
@@ -73,18 +77,18 @@ The HTML and CSS code were passed through the official W3C, Jigsaw and JSHint Va
     - Returned error due to using a percentage value for width within the iframe's as this was the same technique demonstrated previously in course material I believed it to be acceptable. 
     - Validated using [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
   <br>
-  ![HTML Validation](./assets/readme-images/html-validation.png)
+  ![HTML-Validation](./assets/readme-images/html-validation.png)
 
 
 - CSS
   - Stylesheet returned no error when passed through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
   <br>
-  ![Valid CSS](./assets/readme-images/css-validation.png)
+  ![Valid-CSS](./assets/readme-images/css-validation.png)
 
 - Javascript
   - Script returned only a few warnings with most being the same issue regarding each ternary expression when passed through the [JSHint Validator](https://jshint.com/)
   <br>
-  ![JS Validation](./assets/readme-images/js-validation.png)
+  ![JS-Validation](./assets/readme-images/js-validation.png)
 
 
 ### Bugs
