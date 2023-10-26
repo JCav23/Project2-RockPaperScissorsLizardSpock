@@ -24,7 +24,7 @@ The colour palette was generated using coolers.co to create a visually appealing
 ![Colour Palette](./assets/readme-images/color-scheme.png)
 
 ### Fonts:
-The Monserrat font was chosen as a modern and attractive font. 
+The Monserrat font was chosen as a modern and attractive font. It is a sans-serif font that matches the scientific tone of the source material show, and also are more readable than serif fonts, improving the accessibility of the webpage.
 
 ### Images:
 The pictures and iframe were both chosen to relate back to the television show evoking an position emotional response from those who have watched the show. 
@@ -76,7 +76,7 @@ The HTML and CSS code were passed through the official W3C, Jigsaw and JSHint Va
     - Returned error due to frameborder property being deprecated, the error was then removed accordingly and the css updated.
     - Returned error due to using a percentage value for width within the iframe's as this was the same technique demonstrated previously in course material I believed it to be acceptable. 
     - Validated using [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-    
+
   ![HTML-Validation](./assets/readme-images/html-validation.png)
 
 
