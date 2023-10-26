@@ -1,20 +1,23 @@
 # Rock Paper Scissors Lizard Spock
 
-Welcome to Rock, Paper, Scissors, Lizard, Spock. An interactive web game based off of the twist on the classic "Rock, Paper Scissors" game made popular by the television show The Big Bang Theory. Playing against Dr. Sheldon Cooper (simulated by the computer), the player makes an input using one of the button inputs
+Welcome to Rock, Paper, Scissors, Lizard, Spock. An interactive web game based off of the twist on the classic "Rock, Paper Scissors" game made popular by the television show The Big Bang Theory. Playing against Dr. Sheldon Cooper (simulated by the computer), the player makes an input using one of the button inputs. 
+
+The player will make a choice to start the game and the backend logic will randomly generate a choice for the computer and then evaluate a winner based on the rock, paper, scissors, lizard, spock rules. Once a winner has been calculated the scores are updated and the player is free to play again, you are free to play as many times as you wish and there is also a reset button to return the page to the default with the scores set to zero. 
 
 ![Responsice Mockup](./assets/readme-images/responsive-mockup.png)
 
 ## UX
 
 ### Site Purpose:
+The site is designed to provide a simple visually appealing game, for entertainment purposes. 
 
 ### Site Goal:
 
 ### Audience:
-
+The game was made popular by the hit television show the Big Bang Theory, so incorporates different features to relate back to the television show. The iframe giving the explanation is a direct clip from the television show, also the atom images were chose to again relate back to the television show being similar to the show logo.
 
 ### Communication:
-
+All explanations and navigation across the single page has been designed to make the interactions for the user as simple as possible, with clear contrasting colours on the buttoms combined with hover effects clearly convey the interactivity of the game while maintaining an attractive minimalist design.
 
 ## Design
 
@@ -23,18 +26,20 @@ The colour palette was generated using coolers.co to create a visually appealing
 ![Colour Palette](./assets/readme-images/color-scheme.png)
 
 ### Fonts:
-
+The Monserrat font was chosen as a modern and attractive font.
 
 ### Images:
-
+The pictures and iframe were both chosen to relate back to the television show evoking an position emotional response from those who have watched the show. 
 
 ## Features 
 
 ### Existing Features
 
-### Landing Page
+### Game Area
 
-![Main Page]()
+- The Game area is displayed with a nice clear layout with interactive buttons presenting interactivity to the user. The Buttons have a hover effect and a pointer cursor to relay again that interactivity to the user. 
+
+![Game Area](./assets/readme-images/game-area.png)
 
 - __Footer__ 
 
@@ -42,12 +47,12 @@ The colour palette was generated using coolers.co to create a visually appealing
   - The footer is valuable to the user as it encourages them to keep connected via social media and keep up to date about future releases.
   - The footer is available across all pages on the site to maintain the theming and style across the website. 
 
-![Footer]()
+![Footer](./assets/readme-images/footer.png)
 
 
 ### Features Left to Implement
 
-For future releases it would be nice to perhaps add a pop up declaring an official winner after a certain number of rounds. 
+For future releases it would be nice to perhaps add a pop up declaring an official winner after a certain number of rounds or when either the player or computer hit a specific score. 
 
 ## Testing 
 
